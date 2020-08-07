@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<h1>ICS3U Assignment: Loops</h1>
+<h2>Luca Iliut - August 4, 2020</h2>
+<h3>Exercice 4 (for loops)</h3>
+    
+<p id="loops4"></p>
+<script>
+    let text = "";
+    let mychar="*"
+    let repchar=" *"
+    let i = 0;
+    let rows = 9;
+    let y = 1;
+    for (i=0; i<rows; i++) {
+      text += "<br>" + mychar;
+      if (i > 0){
+          text += repchar.repeat(y);
+          if (i < 4) {
+            y++;  
+          } else {
+              y--;
+          }
+                    
+        }
+      document.getElementById("loops4").innerHTML = text;
+    }
+    </script>
+
+</body>
+</html>
